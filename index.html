@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="icon" href="images/book.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="nav">
+
+            <div class="logo">
+
+                <img src="images/book.png" alt="Library-Logo">
+                <h1>Library</h1>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="images/pp.jpg" alt="Profile Photo">
+                <p>Osman Yıldız</p>
+                <i class="fa-solid fa-gear"></i>
+
+            </div>
+
+        </div>
+
+        <div class="book-case">
+        </div>
+
+        <dialog class="modal">
+
+            <h1>Add New Book</h1>
+
+            <form id='form' action="submit" method="dialog">
+                <label for="title">Title</label>
+                <input id="title" type="text" placeholder="Title">
+                <label for="author">Author</label>
+                <input id="author" type="text" placeholder="Author">
+                <label for="pages">Number Of Pages</label>
+                <input id="pages" type="number" placeholder="Number Of Pages">
+                <label for="read-or-not">Did you read this book?</label>
+                <select name="read-or-not" id="read-or-not">
+                    <option value=""></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <button class="add-button" type="submit">Add</button>
+            </form>
+
+            <button class="close-modal-button">Close</button>
+
+        </dialog>
+
+        <div class="sidebar">
+
+            <div class="info">
+                <h1>Information</h1>
+
+                <div class="info-row">
+                    <p>Books</p>
+                    <p class="number-of-books"></p>
+                </div>
+
+                <div class="info-row">
+                    <p>Finished Books</p>
+                    <p class="finished-books"></p>
+                </div>
+
+                <div class="info-row">
+                    <p>Unfinished Books</p>
+                    <p class="unfinished-books"></p>
+                </div>
+
+            </div>
+
+            <div class="storage">
+                <h1>Storage Options</h1>
+                <button class="delete-storage-button">Delete Storage</button>
+            </div>
+
+            <button class="add-book-button">Add A New Book</button>
+
+        </div>
+
+        <div class="footer">
+            <p>Copyright © 2023</p>
+            <a id="name" href="https://github.com/OsmanYildiz98" target="_blank">OsmanYildiz98</a>
+            <a href="https://github.com/OsmanYildiz98" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
